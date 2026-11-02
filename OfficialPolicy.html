@@ -129,14 +129,14 @@
     <h2>3. Device Permissions & Why They Are Needed</h2>
     <p>CueFloat requests only the minimum Android permissions required for its teleprompter floating functions:</p>
     
-    <h3>A. Display Over Other Apps (SYSTEM_ALERT_WINDOW)</h3>
-    <p>Allows CueFloat to display the movable, resizable floating reading overlay over your phone's camera app or streaming app while you speak. CueFloat does not record or read the screen of other apps.</p>
+    <h3>A. Display Over Other Apps (SYSTEM_ALERT_WINDOW / Overlay Permission)</h3>
+    <p>As a floating teleprompter app, CueFloat requires this permission solely to display the movable, resizable script reading window over your third-party camera apps, video meeting tools, or social media apps while you record. <strong>CueFloat never monitors, captures, inspects, or reads your screen or any data from other apps running underneath.</strong></p>
 
     <h3>B. Foreground Service (FOREGROUND_SERVICE & specialUse)</h3>
-    <p>Required by Android to keep the floating prompter smooth and active while you switch apps or record in camera apps, preventing the operating system from terminating the overlay unexpectedly.</p>
+    <p>Required by the Android operating system to keep the floating teleprompter active and fluid while you navigate to your camera or other apps, ensuring the overlay is not unexpectedly killed by background battery optimization systems.</p>
 
-    <h3>C. Notifications (POST_NOTIFICATIONS)</h3>
-    <p>Displays an ongoing playback notification (Play, Pause, Close) in your notification shade so you can control prompting easily.</p>
+    <h3>C. Notification Permission (POST_NOTIFICATIONS - Android 13+)</h3>
+    <p>This permission is used <strong>exclusively to provide you with ongoing controls and an instant exit button to dismiss/close the floating overlay</strong> directly from your device's notification bar at any time (including Play, Pause, and Exit Prompter actions). CueFloat does not send advertising, marketing, or promotional push notifications.</p>
 
     <h3>D. Audio / Microphone (RECORD_AUDIO - Optional)</h3>
     <p>If you choose to enable voice-assisted features (such as voice-activated auto-scroll or live audio level meters), audio is processed <strong>strictly on-device in real-time</strong>. Audio is never recorded to disk, uploaded, or transmitted anywhere.</p>
@@ -154,7 +154,7 @@
     <p>If you have any questions or feedback regarding this Privacy Policy, please contact us at:</p>
     <p><strong>App:</strong> CueFloat: Video Teleprompter<br>
     <strong>Developer:</strong> CueFloat Support<br>
-    <strong>Email:</strong> support@cuefloat.com</p>
+    <strong>Email:</strong> nasir@creaxe.com</p>
 
     <div class="footer">
       &copy; 2026 CueFloat. All rights reserved.
