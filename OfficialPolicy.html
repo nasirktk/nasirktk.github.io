@@ -12,6 +12,7 @@
       --text-main: #F5F8FC;
       --text-muted: #94A3B8;
       --border: #1E293B;
+      --accent: #38BDF8;
     }
     * {
       box-sizing: border-box;
@@ -26,7 +27,7 @@
       padding: 40px 20px;
     }
     .container {
-      max-width: 800px;
+      max-width: 820px;
       margin: 0 auto;
       background-color: var(--card-bg);
       border: 1px solid var(--border);
@@ -48,13 +49,13 @@
       font-size: 1.35rem;
       margin-top: 32px;
       margin-bottom: 12px;
-      color: #38BDF8;
+      color: var(--accent);
       border-bottom: 1px solid var(--border);
       padding-bottom: 6px;
     }
     h3 {
-      font-size: 1.1rem;
-      margin-top: 20px;
+      font-size: 1.05rem;
+      margin-top: 18px;
       margin-bottom: 8px;
       color: var(--text-main);
     }
@@ -84,6 +85,13 @@
       font-weight: 600;
       margin-bottom: 20px;
     }
+    .highlight-box {
+      background: rgba(56, 189, 248, 0.08);
+      border-left: 4px solid var(--accent);
+      padding: 14px 18px;
+      border-radius: 8px;
+      margin: 18px 0;
+    }
     .footer {
       margin-top: 40px;
       padding-top: 20px;
@@ -103,58 +111,73 @@
 </head>
 <body>
   <div class="container">
-    <span class="badge">Official Policy</span>
+    <span class="badge">Official Google Play Policy</span>
     <h1>Privacy Policy</h1>
     <div class="updated"><strong>CueFloat: Video Teleprompter</strong> • Last Updated: November 2, 2026</div>
 
-    <p>Welcome to <strong>CueFloat: Video Teleprompter</strong> ("CueFloat", "we", "our", or "us"). We are committed to protecting your privacy. This Privacy Policy explains our practices regarding data privacy when you use our mobile application available on the Google Play Store.</p>
-    <p>CueFloat is built as an <strong>offline-first, privacy-focused creator utility</strong>. Your scripts, presentations, and personal content belong solely to you.</p>
-
-    <h2>1. Summary of Key Principles</h2>
-    <ul>
-      <li><strong>No Account Required:</strong> You can use CueFloat completely without signing up or creating an account.</li>
-      <li><strong>Scripts Stay on Your Device:</strong> All your scripts, drafts, and preferences are stored strictly locally in on-device storage.</li>
-      <li><strong>No Cloud Uploads:</strong> We never upload your text to external servers, nor do we sell or monetize your data.</li>
-      <li><strong>No Camera Usage in this Version:</strong> The current version of CueFloat does <strong>not</strong> access, capture, or record through your device's camera.</li>
-    </ul>
-
-    <h2>2. Information We Do NOT Collect</h2>
-    <ul>
-      <li><strong>Personal Identity Information:</strong> We do not collect names, phone numbers, or emails.</li>
-      <li><strong>User Content:</strong> We cannot read, access, or transmit your scripts or notes.</li>
-      <li><strong>Location Data:</strong> We do not track or request your GPS or network location.</li>
-      <li><strong>Advertising / Tracking Identifiers:</strong> We do not bundle third-party ad networks or tracking trackers.</li>
-    </ul>
-
-    <h2>3. Device Permissions & Why They Are Needed</h2>
-    <p>CueFloat requests only the minimum Android permissions required for its teleprompter floating functions:</p>
+    <p>Welcome to <strong>CueFloat: Video Teleprompter</strong> ("CueFloat", "we", "our", or "us"). We respect your privacy and are committed to protecting it. This Privacy Policy describes how CueFloat handles information when you use our mobile application available on Google Play.</p>
     
-    <h3>A. Display Over Other Apps (SYSTEM_ALERT_WINDOW / Overlay Permission)</h3>
-    <p>As a floating teleprompter app, CueFloat requires this permission solely to display the movable, resizable script reading window over your third-party camera apps, video meeting tools, or social media apps while you record. <strong>CueFloat never monitors, captures, inspects, or reads your screen or any data from other apps running underneath.</strong></p>
+    <div class="highlight-box">
+      <strong>Offline-First Design:</strong> CueFloat is an offline-first teleprompter utility. All your scripts, notes, and custom configurations remain strictly on your local device. We do not operate external script storage servers or sell your personal information.
+    </div>
 
-    <h3>B. Foreground Service (FOREGROUND_SERVICE & specialUse)</h3>
-    <p>Required by the Android operating system to keep the floating teleprompter active and fluid while you navigate to your camera or other apps, ensuring the overlay is not unexpectedly killed by background battery optimization systems.</p>
+    <h2>1. Summary of Key Privacy Principles</h2>
+    <ul>
+      <li><strong>No Account Required:</strong> You can create, edit, and prompt scripts without registering an account.</li>
+      <li><strong>Scripts Stay on Your Device:</strong> All scripts are stored in your device's local database.</li>
+      <li><strong>No Camera Usage in this Version:</strong> CueFloat does not access, record, or capture video from your camera.</li>
+      <li><strong>Real-Time On-Device Voice Processing:</strong> When voice-activated scroll is active, speech is processed locally in real-time and never recorded or transmitted.</li>
+    </ul>
 
-    <h3>C. Notification Permission (POST_NOTIFICATIONS - Android 13+)</h3>
-    <p>This permission is used <strong>exclusively to provide you with ongoing controls and an instant exit button to dismiss/close the floating overlay</strong> directly from your device's notification bar at any time (including Play, Pause, and Exit Prompter actions). CueFloat does not send advertising, marketing, or promotional push notifications.</p>
+    <h2>2. Permissions Requested & Why They Are Needed</h2>
+    <p>CueFloat requests only the specific Android permissions necessary to deliver its core teleprompter capabilities:</p>
 
-    <h3>D. Audio / Microphone (RECORD_AUDIO - Optional)</h3>
-    <p>If you choose to enable voice-assisted features (such as voice-activated auto-scroll or live audio level meters), audio is processed <strong>strictly on-device in real-time</strong>. Audio is never recorded to disk, uploaded, or transmitted anywhere.</p>
+    <h3>A. Display Over Other Apps (SYSTEM_ALERT_WINDOW)</h3>
+    <p><strong>Purpose:</strong> Allows the teleprompter window to float over your device's camera, video-meeting, or social streaming apps while you record.</p>
+    <p><strong>Data Safety:</strong> This permission is used exclusively to draw the floating text window. <strong>CueFloat never monitors, captures, inspects, or reads your screen or any data from other apps running underneath.</strong></p>
 
-    <h3>E. Storage / File Access</h3>
-    <p>If you choose to import a <code>.txt</code> or <code>.md</code> script, the app uses Android's native system file picker to read only the specific document you selected.</p>
+    <h3>B. Notifications (POST_NOTIFICATIONS - Android 13+)</h3>
+    <p><strong>Purpose:</strong> Displays an ongoing status bar notification while the prompter is running.</p>
+    <p><strong>Control & Dismissal:</strong> This permission is used <strong>exclusively to provide you with ongoing playback controls (Play, Pause) and an instant Exit button to completely dismiss/close the floating overlay</strong> at any time. We do not send marketing, promotional, or advertising notifications.</p>
+
+    <h3>C. Foreground Services (FOREGROUND_SERVICE, specialUse & microphone)</h3>
+    <p><strong>Purpose:</strong> Keeps the floating teleprompter responsive and active while you navigate to your camera app, preventing Android from abruptly killing the prompter window in the background.</p>
+    <p><strong>Data Safety:</strong> Used strictly for overlay window lifecycle and optional on-device voice processing. No personal data is transmitted.</p>
+
+    <h3>D. Microphone Access (RECORD_AUDIO - Optional)</h3>
+    <p><strong>Purpose:</strong> Used only when you voluntarily enable voice-assisted features (such as on-device Voice-Activated Auto-Scroll or the live audio level meter).</p>
+    <p><strong>Data Safety:</strong> <strong>All audio is processed strictly on-device in real-time.</strong> Audio is never recorded to permanent files, stored, uploaded, or transmitted to any server.</p>
+
+    <h3>E. Bluetooth (BLUETOOTH & BLUETOOTH_CONNECT)</h3>
+    <p><strong>Purpose:</strong> Allows you to connect wireless Bluetooth presentation remotes, selfie clickers, or headset buttons to control prompter scrolling hands-free (Play/Pause, speed adjustment).</p>
+
+    <h3>F. Vibration (VIBRATE)</h3>
+    <p><strong>Purpose:</strong> Delivers subtle haptic feedback during countdown ticks and remote control clicks.</p>
+
+    <h3>G. Storage & Document Access</h3>
+    <p><strong>Purpose:</strong> When you choose to import an existing script (<code>.txt</code>, <code>.md</code>), CueFloat uses Android's native system file picker to read only the specific document you select.</p>
+
+    <h2>3. Advertising & Third-Party SDKs</h2>
+    <p>CueFloat may integrate <strong>Google AdMob (Google Mobile Ads SDK)</strong> to display advertisements. Google AdMob may automatically collect and process certain non-personal device information, such as your device's Android Advertising ID (AAID), IP address, and general diagnostic logs to serve relevant ads in accordance with Google's Privacy Policy.</p>
+    <p>You can learn more about how Google uses information from apps that use its services by visiting: <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google Advertising Privacy & Terms</a>.</p>
 
     <h2>4. Data Retention & Deletion</h2>
-    <p>Because all data is stored locally on your device, deleting a script from the app deletes it from your device. Uninstalling the app permanently removes all local app data.</p>
+    <p>All scripts and preferences reside solely on your device. When you delete a script inside CueFloat, it is removed immediately. If you clear app data or uninstall CueFloat, all locally stored data is permanently deleted from your device.</p>
 
-    <h2>5. Third-Party Services</h2>
-    <p>CueFloat operates offline. When distributed through Google Play, standard Google Play Services may provide anonymized crash and performance diagnostics (via Google Play Console) to help resolve app issues.</p>
+    <h2>5. Children's Privacy</h2>
+    <p>CueFloat is not directed to children under 13 years of age, and we do not knowingly collect personal information from children.</p>
 
-    <h2>6. Contact Us</h2>
-    <p>If you have any questions or feedback regarding this Privacy Policy, please contact us at:</p>
-    <p><strong>App:</strong> CueFloat: Video Teleprompter<br>
-    <strong>Developer:</strong> CueFloat Support<br>
-    <strong>Email:</strong> nasir@creaxe.com</p>
+    <h2>6. Changes to this Privacy Policy</h2>
+    <p>We may periodically update this Privacy Policy. The latest version will always be posted on this page with the updated revision date.</p>
+
+    <h2>7. Contact Information</h2>
+    <p>If you have any questions or feedback regarding this Privacy Policy or your privacy while using CueFloat, please contact us at:</p>
+    <p>
+      <strong>App:</strong> CueFloat: Video Teleprompter<br>
+      <strong>Developer:</strong> Nasir Khattak<br>
+      <strong>Email:</strong> nasir@creaxe.com</p>
+      <strong>Support & Inquiries:</strong> <a href="https://github.com/nasirktk" target="_blank" rel="noopener">github.com/nasirktk</a>
+    </p>
 
     <div class="footer">
       &copy; 2026 CueFloat. All rights reserved.
@@ -162,4 +185,3 @@
   </div>
 </body>
 </html>
-
