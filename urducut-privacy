@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1020">
+  <meta name="description" content="Privacy Policy for UrduCut - Urdu Video Editor Text & Reels.">
+  <title>UrduCut Privacy Policy</title>
+  <style>
+    :root{color-scheme:dark;--bg:#080d18;--card:#101a2c;--line:#24354d;--text:#e8eef7;--muted:#aab8ca;--accent:#52d6c6;--link:#70dfd2}
+    *{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 50% -10%,#183047 0,transparent 50%),var(--bg);color:var(--text);font:16px/1.7 system-ui,-apple-system,"Segoe UI",sans-serif}
+    main{width:min(900px,calc(100% - 32px));margin:44px auto;padding:clamp(24px,5vw,54px);background:rgba(16,26,44,.96);border:1px solid var(--line);border-radius:24px;box-shadow:0 24px 80px #0006}
+    header{padding-bottom:24px;border-bottom:1px solid var(--line);margin-bottom:28px}.eyebrow{color:var(--accent);font-size:.8rem;font-weight:750;letter-spacing:.14em;text-transform:uppercase}h1{font-size:clamp(2rem,6vw,3rem);line-height:1.12;margin:.5rem 0}h2{font-size:1.25rem;color:#f4f7fc;margin:30px 0 8px}p,li{color:var(--muted)}ul{padding-left:1.35rem}li{padding:.2rem 0}a{color:var(--link);text-underline-offset:3px}.summary{background:#13243a;border-left:4px solid var(--accent);padding:16px 18px;border-radius:8px;color:#dce9f3}.small{font-size:.92rem}footer{border-top:1px solid var(--line);margin-top:34px;padding-top:18px;color:var(--muted)}
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="eyebrow">UrduCut · Urdu Video Editor Text &amp; Reels</div>
+    <h1>Privacy Policy</h1>
+    <p class="small">Effective date: November 14, 2026</p>
+  </header>
+
+  <p class="summary">UrduCut edits your videos on your device. The app does not provide an account or project-sync service, and our app servers do not receive your source videos, photos, voice recordings, editing projects, or exported videos. The app does connect to Google services for ads and purchases, and to our download host when you request templates or fonts.</p>
+
+  <h2>Who this policy covers</h2>
+  <p>This policy describes how UrduCut (package <code>com.urdu.videoeditor</code>), published by Nasir, handles information. It applies to the Android app and its editing, template, font, advertising, and subscription features.</p>
+
+  <h2>Information and how it is used</h2>
+  <ul>
+    <li><strong>Photos, videos, and audio you choose:</strong> Android grants access to media you select or authorize so you can edit it. The app reads this media for preview and export. It is processed on your device and is not uploaded to our servers.</li>
+    <li><strong>Voiceovers:</strong> If you start voice recording, Android's microphone records audio for your project. The recording is saved in the app's private project storage and used in that edit; the app does not send it to our servers.</li>
+    <li><strong>Projects and settings:</strong> Project details, timeline edits, and related settings are saved locally in app storage so you can reopen your work. No account or cloud project-sync feature is currently provided.</li>
+    <li><strong>Exports:</strong> When you export, the finished video is written to your device's shared media library, under Movies/UrduVideoEditor where supported. It remains under your device/gallery controls.</li>
+    <li><strong>Fonts and templates:</strong> When you choose to download a font or template, the app requests that file from our server and caches downloaded files on your device. The hosting provider necessarily receives ordinary connection information, such as your IP address and request details, to deliver the file and operate its service. Your project and source media are not included in these download requests.</li>
+    <li><strong>Advertising:</strong> The free version uses Google Mobile Ads (AdMob) banner and full-screen ads. Google and its advertising partners may process device identifiers, IP address, ad delivery and interaction information, and diagnostic data to provide, measure, and protect ads, subject to Google's settings and policies. Premium entitlement disables in-app ads. See <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from apps and sites that use its services</a> and <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</li>
+    <li><strong>Subscriptions:</strong> UrduCut offers premium subscriptions through Google Play Billing. Google Play handles checkout and payment details. The app receives purchase and subscription status to unlock premium features and stores the resulting entitlement locally. We do not receive or store your full payment-card details. See <a href="https://play.google.com/about/play-terms/">Google Play Terms of Service</a> and Google's privacy policy.</li>
+  </ul>
+
+  <h2>Sharing</h2>
+  <p>We do not sell your media or project information. We do not send those items to our own servers. Information may be processed by Google and other service providers as needed for ads, Google Play purchases, or file delivery, as described above and in their policies. If you use Android backup or device-transfer features, Android may handle app data according to your device and Google account settings; UrduCut has Android backup enabled.</p>
+
+  <h2>Permissions</h2>
+  <ul>
+    <li><strong>Photos, videos, and audio:</strong> select and edit media in your projects.</li>
+    <li><strong>Microphone:</strong> record a voiceover when you start that feature.</li>
+    <li><strong>Notifications:</strong> show app notifications where supported by Android.</li>
+    <li><strong>Internet and network state:</strong> load ads, request fonts/templates, and connect to Google Play Billing.</li>
+    <li><strong>Vibration:</strong> provide touch or timeline feedback.</li>
+  </ul>
+  <p>You can manage permissions in Android Settings. Removing a permission may make the related feature unavailable.</p>
+
+  <h2>Storage, retention, and deletion</h2>
+  <p>Projects, voice recordings, and downloaded files are kept in app storage until removed by the app, Android storage management, or app uninstall. Exported videos are separate files in your device media library; delete them using your Gallery or Files app. Google and the file-hosting provider retain information under their own policies and retention practices.</p>
+
+  <h2>Children</h2>
+  <p>UrduCut is a general-purpose video editing app and is not designed specifically for children under 13. We do not knowingly ask children to provide personal information. If you believe a child has provided personal information to us, contact us so we can review the matter.</p>
+
+  <h2>Security and changes</h2>
+  <p>Local project files are stored in Android app storage, and network downloads use HTTPS. No method of storage or transmission can be guaranteed completely secure. We may update this policy when the app or its services change; the effective date above will be updated when we do.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy? Contact the developer at <a href="mailto:nasir@creaxe.com">nasir@creaxe.com</a> or visit <a href="https://github.com/nasirktk">github.com/nasirktk</a>.</p>
+
+  <footer><p class="small">This policy describes the app's current implementation. Third-party services are governed by their own privacy policies and terms.</p></footer>
+</main>
+</body>
+</html>
